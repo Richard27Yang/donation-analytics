@@ -1,26 +1,4 @@
-# Insight Data Engineering Challenge - Donation Analytics
-
-# Approach
-
-# Dependencies
-
-The dontation analysis code running at python 3 environment.
-The standard libraries are used. 
-
-# Run Instructions
-## Input files
-
-The Federal Election Commission provides data files stretching back years and is [regularly updated](http://classic.fec.gov/finance/disclosure/ftpdet.shtml).
-## Output file
-
-For the  output file that your program will create, `repeat_donors.txt`, the fields on each line should be separated by a `|`
-
-
------------------------------------------------------------------------------------------------------------------------
-# Original Instrucutions
-
 # Table of Contents
-
 1. [Introduction](README.md#introduction)
 2. [Challenge summary](README.md#challenge-summary)
 3. [Details of challenge](README.md#details-of-challenge)
