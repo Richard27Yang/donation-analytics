@@ -2,7 +2,7 @@
 Python3 solution to the 2018 Insight Challenge.
 
 # Approach
-* Clean up the data from the original format, separated by a `|`.
+* Clean up the data from the original format, separated by a `|`. [See the orinal requirement here](README.md#Challenge-Requirement)
 * Blank lines will be ignored
 * Contributions from repeat donors for recipient are calculated and compute the desired percentile value.
 * Create unique donor id using tuple ( combination of NAME and ZIP_CODE ) to identify a unique donor
@@ -38,7 +38,7 @@ The Federal Election Commission provides data files stretching back years and is
 For the  output file that your program will create, `repeat_donors.txt`, the fields on each line should be separated by a `|`
 
 
-Requirement
+# Challenge Requirement
 -----------------------------------------------------------------------------------------------------------------------
 
 # Table of Contents
