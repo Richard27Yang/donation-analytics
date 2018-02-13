@@ -18,8 +18,8 @@ The entied record will be ignored if
 ## Classes: Create each record as a class
    New_Record
 ### Methods:
-* extract_item_from_record
-* check_valid_record
+* New_Record.extract_item_from_record()
+* New_Record.check_valid_record()
 ## Independent Utilities Functions:
 * check_files
 * nonblank_lines
@@ -37,6 +37,8 @@ The Federal Election Commission provides data files stretching back years and is
 
 For the  output file that your program will create, `repeat_donors.txt`, the fields on each line should be separated by a `|`
 
+
+Requirement
 -----------------------------------------------------------------------------------------------------------------------
 
 # Table of Contents
