@@ -1,8 +1,8 @@
 # Insight Data Engineering Challenge - Donation Analytics
-Python3 solution to the 2018 Insight Challenge.
+Python3 solution to the 2018 Insight Challenge.  [See the orinal requirement here](README.md#challenge-requirement)
 
 # Approach
-* Clean up the data from the original format, separated by a `|`. [See the orinal requirement here](README.md#challenge-requirement)
+* Clean up the data from the original format, separated by a `|`.
 * Blank lines will be ignored
 * Contributions from repeat donors for recipient are calculated and compute the desired percentile value.
 * Create unique donor id using tuple ( combination of NAME and ZIP_CODE ) to identify a unique donor
