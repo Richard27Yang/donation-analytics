@@ -10,18 +10,23 @@ from datetime import datetime
 from pprint import pprint
 from utils import percentile_compute,check_files, nonblank_lines
 
-# check input record
+# class of new record of each line
 class New_Record():
     ''' Create an record class 
     
     Parameters
     --------------------
-    '''
-    
-    '''
+	self, record
+	
     Attributes
     --------------------
-    
+      cmte_id, 	string, recepient id
+      donor_name, string, donor name
+      zip_code, string, donor's zip code
+      transaction_dt, datetime.date format,  transaction date,%m%d%Y
+      year, int, transaction year, 
+      transaction_amt, int, transaction amount
+      other_id, string, other id input
     '''
     def __init__(self, record):
         self.record = record
@@ -84,7 +89,7 @@ class New_Record():
     
 if __name__ == '__main__':
     
-    # proper input 
+    # check proper input 
     try:
         donors_input = sys.argv[1] 
         pcecentile_input = sys.argv[2]

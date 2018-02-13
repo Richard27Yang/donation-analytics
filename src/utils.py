@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Feb 11 21:23:57 2018
-
-@author: yangy
+This module include all the utilities used by donation_analytics.py
+@author: Yunchao Yang
 """
 import math
 import sys
 from datetime import datetime
 
-# Step1 preprocessing: check if input files are ready to read and write
+# function to check if input files is readable and writable
 def check_files(donors_input,pcecentile_input,donors_repeat_file):
-    '''
-    check if files name are given correctly
-    
-    '''
+    ''' check if files name are given correctly '''
     
     # check input files availability.
     try:
@@ -38,14 +35,15 @@ def check_files(donors_input,pcecentile_input,donors_repeat_file):
         
     return True
 
+# function to remove empty lines
 def nonblank_lines(file_lines):
-    ''' remove empty lines    
-    '''
+    ''' remove empty lines '''
     for line in file_lines:
         line_rstp = line.rstrip()
         if line_rstp:
             yield line_rstp
 
+# function to calculate percentile  
 def percentile_compute(numbered_list, percentile_set):
     ''' Percentile computation 
 
