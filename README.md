@@ -1,11 +1,33 @@
 # Insight Data Engineering Challenge - Donation Analytics
+Python3 solution to the 2018 Insight Challenge.
 
 # Approach
+* Clean up the data from the original format, separated by a `|`.
+* Blank lines will be ignored
+* Contributions from repeat donors for recipient are calculated and compute the desired percentile value.
+* Create unique donor id using tuple ( combination of NAME and ZIP_CODE ) to identify a unique donor
 
+The entied record will be ignored if 
+* the OTHER_ID field contains any other value
+* record length is not 21
+* TRANSACTION_DT is an invalid date (e.g., empty, malformed)
+* ZIP_CODE is an invalid zip code (i.e., empty, fewer than five digits)
+* the NAME is an invalid name (e.g., empty, malformed)
+* any lines in the input file contains empty cells in the CMTE_ID or TRANSACTION_AMT fields
+
+## Classes: Create each record as a class
+   New_Record
+### Methods:
+* extract_item_from_record
+* check_valid_record
+## Independent Utilities Functions:
+* check_files
+* nonblank_lines
+* percentile_compute
 # Dependencies
 
 The dontation analysis code running at python 3 environment.
-The standard libraries are used. 
+The standard python 3 libraries are used. 
 
 # Run Instructions
 ## Input files
